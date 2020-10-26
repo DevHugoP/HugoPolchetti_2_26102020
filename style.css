@@ -1,0 +1,133 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+
+body {
+    font-family: "Raleway", "Sans serif";
+    margin : 0;
+    
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.topHeader{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    align-items: center;
+    padding: 2rem;
+    
+    
+}
+
+.topHeaderNavbar {
+    display: flex;
+    width: 25rem;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-right: 2rem;
+    align-content: space-between;
+    color: #0065FC ;
+
+}
+
+/* TOP-PAGE */
+
+main {
+    max-width: 1440px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.topPage {
+    line-height: 0.5;
+}
+
+.topPage h1 {
+    font-size: 1.5rem;
+}
+
+
+/* Search Bar */
+
+.searchBar {
+    display:inline-flex;
+    max-width: auto;
+}
+
+.searchBarGeoloc {
+    padding: 0.7rem 1.2rem;
+    text-align: center;
+    border-radius: 1rem  0 0 1rem;
+    background-color: #f2f2f2;
+}
+
+.searchBarInput::-webkit-input-placeholder {
+    color: black;
+    font-family: 'Raleway';
+    font-weight: bold ; 
+    padding-left: 0.5rem;
+
+}
+
+.searchBarInput {
+    border-left: none;
+    border-right: none;
+    border-top: #f2f2f2 1px solid;
+    border-bottom: #f2f2f2 1px solid;
+}
+
+
+.searchBarButton {
+    background-color: #0065FC ;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: bold;
+    border-style: none;
+    padding: 0.9rem 1.5rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+/* Filter Bar */
+
+.filterBar {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.filterBarTitle {
+    
+}
+
+.filterBarItem {
+    display: flex;
+    align-items: center;
+    border: #f2f2f2 2px solid;
+    border-radius: 2rem;
+    height: 3rem;
+    width: 10rem;
+}
+
+.filterBarItemText {
+    font-weight: bold;
+}
+
+.filterBarItemIcon {
+    background-color: #DEEBFF;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: -2px;
+
+}
