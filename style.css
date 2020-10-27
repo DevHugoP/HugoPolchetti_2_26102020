@@ -6,7 +6,6 @@ body {
     font-family: "Raleway", "Sans serif";
     margin : 0;
     
-
 }
 
 a {
@@ -14,7 +13,14 @@ a {
     text-decoration: none;
 }
 
+
+
+
+
 /* HEADER */
+
+
+
 
 .topHeader{
     display: flex;
@@ -38,7 +44,13 @@ a {
 
 }
 
+
+
+
 /* TOP-PAGE */
+
+
+
 
 main {
     max-width: 1440px;
@@ -55,7 +67,12 @@ main {
 }
 
 
+
+
 /* Search Bar */
+
+
+
 
 .searchBar {
     display:inline-flex;
@@ -96,16 +113,21 @@ main {
     border-radius: 0rem 1rem 1rem 0rem;
 }
 
+
+
+
+
 /* Filter Bar */
+
+
+
 
 .filterBar {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 2rem; 
+    text-align: center;
 }
 
-.filterBarTitle {
-    
-}
 
 .filterBarItem {
     display: flex;
@@ -113,11 +135,15 @@ main {
     border: #f2f2f2 2px solid;
     border-radius: 2rem;
     height: 3rem;
-    width: 10rem;
+    margin: 1rem;
+    
 }
 
 .filterBarItemText {
     font-weight: bold;
+    white-space: nowrap;
+    padding: 1rem;
+    
 }
 
 .filterBarItemIcon {
@@ -129,5 +155,205 @@ main {
     align-items: center;
     display: flex;
     margin: -2px;
+    color:#0065FC ;
 
 }
+
+
+
+
+/* Info Line */
+
+
+
+
+.infosLine {
+    display: flex;
+    align-items: center;
+    
+}
+
+.infosLineItem {
+
+    border: #f2f2f2 2px solid;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color:#0065FC ;
+
+}
+
+.infosLineText {
+    margin-left: 1rem;
+}
+
+
+
+
+
+/* CENTRAL SECTION */
+
+
+
+
+.hosting {
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 2rem;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+
+
+}
+
+.hostingCentral {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+
+}
+.hostingCentralHeader {
+    grid-column: 1/-1;
+}
+.hostingCentralHeaderTitle {
+    margin: 0;
+}
+
+.hostingCentralCard {
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.hostingCentralCardFigure {
+    margin: 0;
+}
+
+.hostingCentralCardFigureImage {
+
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.hostingCentralCardFigureCaptionTitle {
+    margin: 0.25rem 0.75rem 0 0.75rem;
+}
+
+.hostingCentralCardPrice {
+    margin: 0.25rem 0.25rem 0.25rem 0.75rem
+}
+.hostingCentralCardStar{
+    margin: 0.25rem 0.25rem 0.25rem 0.75rem
+}
+
+.hostingMainCardGradeIcon[data-active=true] {
+    color: #0065FC;
+}
+
+.hostingMainCardGradeIcon[data-active=false] {
+    color: #d9d9d9;
+}
+
+
+
+
+
+/* POPULAIRES  */
+
+
+
+
+.hostingPopular {
+    display: grid;
+    grid-template-rows:  auto repeat(3, 1fr);
+    align-items: start;
+    row-gap: 2rem;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+
+.hostingPopularTitle{
+    margin: 0;
+    display: flex;
+}
+
+.hostingPopularCard{
+
+}
+
+
+.hostingPopularCardContainer {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
+}
+
+.hostingPopularCardContainerBlock {
+
+    position: relative;
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+}
+
+.hostingPopularCardContainerBlockImage {
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.hostingPopularCardContainerDesc {
+    display: flex;
+    flex-direction: column;
+}
+
+.hostingPopularCardContainerDescTitle {
+    margin: 0rem 0.8rem 0rem 0.8rem;
+    border: none;
+
+}
+
+.hostingPopularCardContainerDescText {
+    margin: 0rem 0.8rem 0rem 0.8rem;
+
+}
+
+.hostingPopularCardContainerDescVoid {
+    flex: 1 1 0%;
+
+}
+
+.hostingPopularCardContainerDescRating {
+    margin : 0rem 0.8rem 0 0.8rem;
+
+}
+
+
+
+/* Activitées  */
