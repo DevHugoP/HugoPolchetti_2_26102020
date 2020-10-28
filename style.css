@@ -207,6 +207,7 @@ main {
     border-radius: 1.5rem;
     padding: 2rem;
     margin-top: 1.5rem;
+    padding: 0;
 
 
 }
@@ -234,7 +235,6 @@ main {
     padding: 0.375rem;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
     height: 100%;
@@ -298,10 +298,6 @@ main {
     display: flex;
 }
 
-.hostingPopularCard{
-
-}
-
 
 .hostingPopularCardContainer {
     display: flex;
@@ -356,4 +352,128 @@ main {
 
 
 
+
+
 /* Activitées  */
+
+
+
+
+
+.activities {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin: 2rem;
+    margin: 5rem 0 0 0 ;
+
+}
+
+.activitiesHeader {
+    grid-area: 1 / 1 / 2 / 5;
+
+
+}
+
+
+
+.activitiesFigureSmall {
+
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+}
+.activitiesFigureLarge {
+
+    border-radius: 1.25rem;
+    box-shadow: 0 0 20px #0000002e;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+
+}
+
+.activitiesFigureSmallImage {
+
+    height: 10rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+
+}
+
+.activitiesFigureLargeImage{
+    height: 25rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.activitiesFigureCaption{
+    margin: 0.2rem 1rem;
+}
+
+.activitiesFigureCaptionTitle{
+    margin: 1rem 0.2rem;
+    font-size: 1rem;
+}
+
+.large1 {
+    grid-area: 2 / 1 / 4 / 2;
+}
+.small2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.small3 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+.large4 {
+    grid-area: 2 / 3 / 4 / 4;
+}
+.small5 {
+    grid-area: 2 / 4 / 3 / 5; 
+}
+
+.small6{
+    grid-area: 3 / 4 / 4 / 5; 
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    line-height: 0.8rem;
+    max-width: 1440px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+
+.about{
+    margin-left: 2rem
+}
+
+.footerTitle {
+
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.help {
+    margin-right: 25rem
+}
+
+.block {
+    margin-bottom: 2.5rem;
+    margin-left: 3rem;
+}
