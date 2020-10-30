@@ -8,22 +8,25 @@
     <title>Réservia</title>
 </head>
 <body>
+    
     <!-- HEADER-->
+
     <header class="topHeader">
         <img class='topHeaderImg' src="images/logo/Reservia.svg">
-        <nav>
-            <ul class="topHeaderNavbar">
-                <li class="topHeaderNavbarHosting" data-active="true"><a href="#hosting">Hébergements</a></li>
-                <li class="topHeaderNavbarActivities"data-active="false"><a href="#activity">Activités</a></li>
-                <li class="topHeaderNavbarSignIn"><a href="#"><strong>S'inscrire</strong></a></li>
-            </ul>
+        <nav class="topHeaderNavbar">
+            <a class="topHeaderNavbarHosting navCouple" href="#hosting" data-active="true">Hébergements</a>
+            <a class="topHeaderNavbarActivities navCouple" href="#activity" data-active="false">Activités</a>
         </nav>
+        <a class="topHeaderNavbarSignIn" href="#"><strong>S'inscrire</strong></a>
     </header>
-    <!--HEADER-->
+
 
     <!--MAIN-->
+
     <main class="main">
+
         <!-- TopPage-->
+
         <section class="topPage">
             <h1 class="topPageTitle">Trouver votre hébergement pour des vacances de rêve</h1>
             <p class="topPageTitleParagraph">En plein centre ville ou en pleine nature</p>
@@ -31,19 +34,22 @@
 
 
         <!--SearchBar-->
+
         <form class="searchBar">
             <span class='searchBarGeoloc'>
                 <i class="fas fa-map-marker-alt iconGeo "></i>
             </span>
-            <input class="searchBarInput" placeholder="Marseille, France"></input>
-            <button class="searchBarButton">Rechercher</button>
+            <input class="searchBarInput" value="Marseille, France"></input>
+            <button class="searchBarButton">
+                <span class='searchBarButtonText'>Rechercher</span>
+                <i class="searchBarButtonIcon fas fa-search"></i>
+            </button>
         </form>
 
         <!-- FilterBar -->
 
         <div class='filterBar'>
-            <h2 class='filterBarTitle'>Filtres</h2>
-
+            <h3 class='filterBarTitle'>Filtres</h3>
             <div class='filterBarItem'>
                 <div class="filterBarItemIcon">
                     <i class="fas fa-money-bill-wave"></i>
@@ -76,7 +82,9 @@
             </div>
             <p class="infosLineText">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
+
         <!-- Central  -->
+
         <section class="hosting" id="hosting">
 
             <div class="hostingCentral">
@@ -191,7 +199,11 @@
                         </div>
                     </a>
                 </article> 
+                <a href="#" class="hostingCentralAbout">Afficher plus</a>
             </div>
+
+            <!-- ASIDE -->
+
             <aside class='hostingPopular'>
                 <h2 class="hostingPopularTitle">Les plus populaires</h2>
                 <article class="hostingPopularCard hostingCentralCard">
@@ -253,57 +265,46 @@
                 </article>
              </aside>
         </section>
+
+        <!-- ACTIVITY -->
+
         <section class="activities" id="activity">
-            <header class="activitiesHeader">
-                <h2 class="activitiesHeaderTitle">Activités à Marseille</h2>
-            </header>
-            <a href="" class="activitiesContainer large1">
-                <figure class='activitiesFigureLarge'>
-                    <img class='activitiesFigureLargeImage' src='images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg' alt="photo du port de Marseille, au premier plan on voit les bateau à quai et au fond on voit la vieille ville sur son relief">
-                    <figcaption class="activitiesFigureCaption">
-                        <h3 class="activitiesFigureCaptionTitle">Vieux Port</h3>
-                    </figcaption>
-                </figure>
+            <h2 class="activitiesTitle">Activités à Marseille</h2>
+            <a href="#" class="activitiesContainer large1">
+                <div class='activitiesFigure'>
+                    <img class='activitiesFigureImage' src='images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg' alt="photo du port de Marseille, au premier plan on voit les bateau à quai et au fond on voit la vieille ville sur son relief">
+                </div>
+            <h3 class="activitiesFigureCaptionTitle">Vieux Port</h3>
             </a>
-            <a href="" class="activitiesContainer small2">
-                <figure class='activitiesFigureSmall'>
-                    <img class='activitiesFigureSmallImage' src='images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg' alt="photo d'un vieux fort en pierre dans une zone montagneuse">
-                    <figcaption class="activitiesFigureCaption">
-                        <h3 class="activitiesFigureCaptionTitle">Fort de Pomègues</h3>
-                    </figcaption>
-                </figure>
+            <a href="#" class="activitiesContainer small2">
+                <div class='activitiesFigure'>
+                    <img class='activitiesFigureImage' src='images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg' alt="photo d'un vieux fort en pierre dans une zone montagneuse">
+                </div>
+            <h3 class="activitiesFigureCaptionTitle">Fort de Pomègues</h3>
             </a>
-            <a href="" class="activitiesContainer small3">
-                <figure class='activitiesFigureSmall'>
-                    <img class='activitiesFigureSmallImage' src='images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg' alt="photo de la mediterranée avec au premier plan une longue vue et au loin les îles du frioul">
-                    <figcaption class="activitiesFigureCaption">
-                        <h3 class="activitiesFigureCaptionTitle">Îles du Frioul</h3>
-                    </figcaption>
-                </figure>
+            <a href="#" class="activitiesContainer small3">
+                <div class='activitiesFigure'>
+                    <img class='activitiesFigureImage' src='images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg' alt="photo de la mediterranée avec au premier plan une longue vue et au loin les îles du frioul">
+                </div>
+            <h3 class="activitiesFigureCaptionTitle">Îles du Frioul</h3>
             </a>
-            <a href="" class="activitiesContainer large4">
-                <figure class='activitiesFigureLarge'>
-                    <img class='activitiesFigureLargeImage' src='images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg' alt="photos des calanques avec au premier plan le relief montagneux et au second plan la mer méditerrannée">
-                    <figcaption class="activitiesFigureCaption">
-                        <h3 class="activitiesFigureCaptionTitle">Parc National des Calanques</h3>
-                    </figcaption>
-                </figure>
+            <a href="#" class="activitiesContainer large4">
+                <div class='activitiesFigure'>
+                    <img class='activitiesFigureImage' src='images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg' alt="photos des calanques avec au premier plan le relief montagneux et au second plan la mer méditerrannée">
+                </div>
+                <h3 class="activitiesFigureCaptionTitle">Parc National des Calanques</h3>
             </a>
-            <a href="" class="activitiesContainer small5">
-                <figure class='activitiesFigureSmall'>
-                    <img class='activitiesFigureSmallImage' src='images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg'alt="photo de Notre-dame-de-la-garde avec en premier plan des bâtiments de la vieille ville ">
-                    <figcaption class="activitiesFigureCaption">
-                        <h3 class="activitiesFigureCaptionTitle">Notre-Dame-de-la-Garde</h3>
-                    </figcaption>
-                </figure>
+            <a href="#" class="activitiesContainer small5">
+                <div class='activitiesFigure'>
+                    <img class='activitiesFigureImage' src='images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg'alt="photo de Notre-dame-de-la-garde avec en premier plan des bâtiments de la vieille ville ">
+                </div>
+            <h3 class="activitiesFigureCaptionTitle">Notre-Dame-de-la-Garde</h3>
             </a>
-            <a href="" class="activitiesContainer small6">
-                <figure class='activitiesFigureSmall'>
-                    <img class='activitiesFigureSmallImage' src='images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg' alt="photo du parc Longchamp sur laqquelle on voit un bâtiment d'époque en pierre avec au premier plan une fontaine">
-                    <figcaption class="activitiesFigureCaption">
-                        <h3 class="activitiesFigureCaptionTitle">Parc Longchamp</h3>
-                    </figcaption>
-                </figure>
+            <a href="#" class="activitiesContainer small6">
+                <div class='activitiesFigure'>
+                    <img class='activitiesFigureImage' src='images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg' alt="photo du parc Longchamp sur laqquelle on voit un bâtiment d'époque en pierre avec au premier plan une fontaine">
+                </div>
+            <h3 class="activitiesFigureCaptionTitle">Parc Longchamp</h3>
             </a>
         </section>
     </main>
