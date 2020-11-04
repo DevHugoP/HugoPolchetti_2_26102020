@@ -173,13 +173,13 @@ main {
 
 
 @media screen and (min-width: 469px) {
-    .searchBarButtonIcon{
-        display: none !important;
+    i.searchBarButtonIcon{
+        display: none ;
     }
 }
 @media screen and (max-width: 470px) {
     .searchBarButtonText{
-     display: none !important;
+     display: none ;
     }
 }
 
@@ -294,9 +294,8 @@ main {
     grid-template-rows: 1fr;
     gap: 0px 2rem;
     border-radius: 1.5rem;
-    padding: 2rem;
     margin-top: 1.5rem;
-    padding: 0;
+
 
 
 }
@@ -635,5 +634,15 @@ footer {
     .block {
         width: 100%;
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    main {
+        padding: 0rem;
+    }
+
+    .topPage,.searchBar,.filterBar,.infosLine,.hostingCentral,.activities{
+        padding: 0 1rem;
     }
 }
