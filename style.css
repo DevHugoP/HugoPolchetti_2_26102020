@@ -54,15 +54,10 @@ a {
     grid-area: sign;
 }
 
-.topHeaderNavbar [data-active="true"] {
-    color: #0065FC;
-}
-
-.topHeaderNavbar:hover {
+.topHeaderNavbarHosting:hover,.topHeaderNavbarActivities:hover {
     color: #0065FC;
     border-top-color: #0065FC;
-}
-
+} 
 
 
 @media screen and (min-width: 650px ) {
